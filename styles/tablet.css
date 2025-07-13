@@ -1,0 +1,72 @@
+@media (max-width: 1099.98px) {
+    /* Ширина экрана меньше 1100px */
+    /* HEADER */
+    .header {
+        column-gap: 30px;
+        padding: 50px 30px;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    /* COVER */
+    .description {
+        gap: 15px;
+    }
+
+    /* LOTS */
+    .lots {
+        padding: 70px 24px;
+    }
+
+    .lots__list {
+        gap: 10px;
+    }
+
+    .lots__blog {
+        align-items: stretch;
+    }
+
+    /* ABOUT */
+    .about {
+        flex-direction: column;
+        align-items: center;
+        padding: 35px 0 100px 0px;
+    }
+
+    .about__logo {
+        align-items: center;
+    }
+
+    .about__text {
+        flex-direction: column;
+        gap: 50px;
+        align-self: center;
+        width: 69.6%;
+        margin-top: 51px;
+    }
+
+    .about__description {
+        flex-direction: column;
+        width: 45ch;
+    }
+
+    /* FOOTER */
+    .footer {
+        align-items: center;
+        padding: 0 30px 50px 40px;
+    }
+
+    .footer .contacts {
+        width: 18ch;
+    }
+
+    .footer .menu .menu__link {
+        margin: 0;
+    }
+
+    .footer__links{
+        gap: 10px;
+    }
+} 
