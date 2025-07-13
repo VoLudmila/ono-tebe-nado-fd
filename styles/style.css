@@ -189,9 +189,9 @@
   position: relative;
   display: flex;
   flex-flow: column wrap;
+  flex-basis: 100%;
   justify-content: space-between;
   align-items: center;
-  flex-basis: 100%;
   gap: 35px;
   height: 596px;
   padding: 45px 35px;
@@ -325,8 +325,8 @@ background-image: url("./../images/card-lot-03.jpg");
 }
 
 .footer .menu .menu__link {
-  list-style-type: none;
   margin: 0 20px 0 0;
+  list-style-type: none;
 }
 
 .footer__links{
@@ -351,13 +351,13 @@ background-image: url("./../images/card-lot-03.jpg");
 }
 
 .footer__links--yt {
-	background-image: url("./../images/yt.svg");
   margin-right: 4px;
+	background-image: url("./../images/yt.svg");
 }
 
 .footer__links--vk{
-  background-image: url("./../images/vk.svg");
   margin-right: 3px;
+  background-image: url("./../images/vk.svg");
 }
 
 .footer__links--pinterest{

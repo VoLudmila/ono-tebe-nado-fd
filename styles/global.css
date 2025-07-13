@@ -12,10 +12,10 @@ body {
   --accent-light-orange : rgba(255, 140, 0, 0.7);
   width: 1100px;
   margin: 0 auto;
+  overflow-x: hidden;
   color: var(--text-black);
   font-family: Raleway, sans-serif;
   font-size: 18px;
-  overflow-x: hidden;
 }
 
 
