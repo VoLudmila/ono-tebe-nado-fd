@@ -8,24 +8,24 @@
   <link rel="stylesheet" href="./fonts/fonts.css">
   <link rel="stylesheet" href="./styles/global.css">
   <link rel="stylesheet" href="./styles/style.css">
-  <link rel="stylesheet" href="./styles/tablet.css" media="screen and (max-width: 1099.98px)">
-  <link rel="stylesheet" href="./styles/mobile.css" media="screen and (max-width: 699.98px)">
   <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
 </head>
 
 <body>
   <header class="header">
-    <ul class="menu">
-      <li class="menu__link menu__link-active">
-        <a>главная</a>
-      </li>
-      <li class="menu__link" >
-        <a class="scroll-to" href="#lots">посмотреть лоты</a>
-      </li>
-      <li class="menu__link" >
-        <a class="scroll-to" href="#about">об аукционе</a>
-      </li>
-    </ul>
+    <nav class="menu">
+      <ul>
+        <li class="menu__link menu__link-active">
+          <a>главная</a>
+        </li>
+        <li class="menu__link" >
+          <a class="scroll-to" href="#lots">посмотреть лоты</a>
+        </li>
+        <li class="menu__link" >
+          <a class="scroll-to" href="#about">об аукционе</a>
+        </li>
+      </ul>
+    </nav>
     <a class="logo" title="Оно тебе надо">
       <img src="./images/logo-black.svg" alt="Лого">
     </a>
@@ -44,7 +44,7 @@
       </h1>
       <div class="description">
         <p class="descr__subline">Аукцион вещей, в которые никто не верил</p>
-        <button class="descr__btn">сделать ставку</button>
+        <button class="descr__btn" type="button">сделать ставку</button>
       </div>
     </section>
     <section id="lots" class="lots">
@@ -52,7 +52,7 @@
       <ul class="lots__list">
         <li class="lots__list-elem">
           <a href="#" title="Фильм режиссёра, который бросил киношколу">
-            <article class="lots__blog first-bg">
+            <article class="lots__blog outdoors-bg">
               <h3 class="lots__blog-title">
                 Фильм режиссёра, который бросил киношколу
               </h3>
@@ -66,7 +66,7 @@
         </li>
         <li class="lots__list-elem">
           <a href="#" title="Книга, где описан один скучный день из жизни рекламного агента">
-            <article class="lots__blog second-bg">
+            <article class="lots__blog book-bg">
               <h3 class="lots__blog-title">
                 Книга, где описан один скучный день из 
                 жизни рекламного агента
@@ -86,7 +86,7 @@
         </li>
         <li class="lots__list-elem">
           <a href="#" title="Картина, которую повторит даже 5-летний сын маминой подруги">
-            <article class="lots__blog third-bg">
+            <article class="lots__blog geometry-bg">
               <h3 class="lots__blog-title">
                 Картина, которую повторит даже 5-летний сын маминой подруги
               </h3>
@@ -137,21 +137,44 @@
       <a class="contacts__elem contacts__elem-active" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
       <a class="contacts__elem">наб. Принсенграхт 263- 265, Амстердам</a>
     </address>
-    <ul class="menu">
-      <li class="menu__link menu__link-active">
-        <a>главная</a>
-      </li>
-      <li class="menu__link" >
-        <a class="scroll-to" href="#lots">посмотреть лоты</a>
-      </li>
-      <li class="menu__link" >
-        <a class="scroll-to" href="#about">об аукционе</a>
-      </li>
-    </ul>
+    <nav class="menu">
+      <ul>
+        <li class="menu__link menu__link-active">
+          <a>главная</a>
+        </li>
+        <li class="menu__link" >
+          <a class="scroll-to" href="#lots">посмотреть лоты</a>
+        </li>
+        <li class="menu__link" >
+          <a class="scroll-to" href="#about">об аукционе</a>
+        </li>
+      </ul>
+    </nav>
     <ul class="footer__links">
-      <li class="footer__links-elem"><a href="#" class="footer__link footer__links--yt" target="_blank" aria-label="Link to YouTube"></a></li>
-      <li class="footer__links-elem"><a href="#" class="footer__link footer__links--vk" target="_blank" aria-label="Link to VK"></a></li>
-      <li class="footer__links-elem"><a href="#" class="footer__link footer__links--pinterest" target="_blank" aria-label="Link to Pinterest"></a></li>
+      <li class="footer__links-elem">
+        <a 
+          href="#" 
+          class="footer__link footer__links--yt" 
+          target="_blank" 
+          aria-label="Link to YouTube"
+        ></a>
+      </li>
+      <li class="footer__links-elem">
+        <a 
+          href="#" 
+          class="footer__link footer__links--vk" 
+          target="_blank" 
+          aria-label="Link to VK"
+        ></a>
+      </li>
+      <li class="footer__links-elem">
+        <a 
+          href="#" 
+          class="footer__link footer__links--pinterest" 
+          target="_blank" 
+          aria-label="Link to Pinterest"
+        ></a>
+      </li>
     </ul>
   </footer>
   <link rel="stylesheet" href="./scripts/script.js">

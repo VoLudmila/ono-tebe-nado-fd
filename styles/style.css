@@ -7,20 +7,20 @@
   padding: 90px 50px;
 }
 
-.menu {
+.menu ul{
   display: flex;
   flex-direction: row;
   align-items: center;
   column-gap: 33px;
   margin-bottom: 2px;
-  list-style-type: circle;	
+  list-style-type: circle;
 }
 
 .menu__link {
   text-decoration: underline;
   text-decoration-color: var(--text-white);
   text-underline-offset: 4px;
-  list-style-type: circle;	
+  list-style-type: circle;
 }
 
 .menu__link-active {
@@ -181,7 +181,7 @@
   list-style: none;
 }
 
-.lots__list-elem a{
+.lots__list-elem a {
   text-decoration: none;
 }
 
@@ -214,15 +214,15 @@
   opacity: 30%;
 }
 
-.first-bg {
+.outdoors-bg {
   background-image: url("./../images/card-lot-01.jpg");
 }
 
-.second-bg {
+.book-bg {
   background-image: url("./../images/card-lot-02.jpg");
 }
 
-.third-bg {
+.geometry-bg {
 background-image: url("./../images/card-lot-03.jpg");
 }
 
@@ -321,16 +321,16 @@ background-image: url("./../images/card-lot-03.jpg");
   width: 22ch;
 }
 
-.footer .menu {
+.footer .menu ul {
   flex-direction: column;
 }
 
-.footer .menu .menu__link {
+.footer .menu ul .menu__link {
   margin: 0 20px 0 0;
   list-style-type: none;
 }
 
-.footer__links{
+.footer__links {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -347,7 +347,7 @@ background-image: url("./../images/card-lot-03.jpg");
   background-position: center;
 }
 
-.footer__link:hover{
+.footer__link:hover {
   background-color: var(--accent-light-orange);
 }
 
@@ -356,11 +356,166 @@ background-image: url("./../images/card-lot-03.jpg");
 	background-image: url("./../images/yt.svg");
 }
 
-.footer__links--vk{
+.footer__links--vk {
   margin-right: 3px;
   background-image: url("./../images/vk.svg");
 }
 
-.footer__links--pinterest{
+.footer__links--pinterest {
   background-image: url("./../images/pinterest.svg");
+}
+
+/* Tablet */
+@media screen and (max-width: 1099.98px) {
+    /* Ширина экрана меньше 1100px */
+    /* HEADER */
+    .header {
+        column-gap: 30px;
+        padding: 50px 30px;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    /* COVER */
+    .description {
+        gap: 15px;
+    }
+
+    /* LOTS */
+    .lots {
+        padding: 70px 24px;
+    }
+
+    .lots__list {
+        gap: 10px;
+    }
+
+    .lots__blog {
+        align-items: stretch;
+    }
+
+    /* ABOUT */
+    .about {
+        flex-direction: column;
+        align-items: center;
+        padding: 35px 0 100px 0px;
+    }
+
+    .about__logo {
+        align-items: center;
+    }
+
+    .about__text {
+        flex-direction: column;
+        gap: 50px;
+        align-self: center;
+        width: 69.6%;
+        margin-top: 51px;
+    }
+
+    .about__description {
+        flex-direction: column;
+        width: 45ch;
+    }
+
+    /* FOOTER */
+    .footer {
+        align-items: center;
+        padding: 0 30px 50px 40px;
+    }
+
+    .footer .contacts {
+        width: 18ch;
+    }
+
+    .footer .menu .menu__link {
+        margin: 0;
+    }
+
+    .footer__links {
+        gap: 10px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 699.98px) {
+    /* Ширина экрана меньше 1100px */
+    /* HEADER */
+    .header {
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 1fr);
+        grid-auto-flow: column;
+        justify-content: center;
+        column-gap: 15px;
+        padding: 30px 0px;
+    }
+
+    .logo {
+        order: -1;
+    }
+
+    .contacts {
+        order: 0;
+    }
+
+    .menu {
+        order: 1;
+    }
+
+    /* COVER */
+    .cover__title {
+        font-size: 70px;
+    }
+
+    .descr__subline {
+        width: fit-content;
+    }
+
+    /* LOTS */
+    .lots {
+        padding: 70px 24px;
+    }
+
+    .lots__list {
+        gap: 30px;
+    }
+
+    .lots__blog {
+        flex-wrap: nowrap;
+        align-items: center;
+        width: fit-content;
+    }
+
+    .lots__blog-title {
+        width: 30ch;
+        text-align: center;
+    }
+
+    .lots__blog-text {
+        width: 28ch;
+    }
+
+
+    /* ABOUT */
+    .about__description {
+        width: fit-content;
+    }
+
+    /* FOOTER */
+    .footer {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+
+    .footer .menu {
+        order: -1;
+    }
+
+    .footer .contacts {
+        margin: 0;
+    }
+
 }
