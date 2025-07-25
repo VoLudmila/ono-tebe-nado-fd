@@ -23,7 +23,7 @@
     }
 
     /* COVER */
-    .cover__title{
+    .cover__title {
         font-size: 70px;
     }
 
@@ -62,7 +62,7 @@
     }
 
     /* FOOTER */
-    .footer{
+    .footer {
         flex-direction: column;
         gap: 25px;
         text-align: center;
