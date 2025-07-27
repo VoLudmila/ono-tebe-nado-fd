@@ -7,7 +7,7 @@
   padding: 90px 50px;
 }
 
-.menu ul{
+.menu__list{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -59,11 +59,7 @@
   text-underline-offset: 4px;
 }
 
-.contacts__elem-active[href^="mailto:"]:hover {
-  text-decoration-color: var(--accent-orange);
-}
-
-.contacts__elem-active[href^="tel:"]:hover {
+.contacts__elem-active:hover {
   text-decoration-color: var(--accent-orange);
 }
 
@@ -73,7 +69,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 757px;
   padding: 165px 50px 51px 50px;
   background-image: url("./../images/cover.jpg");
   background-repeat: no-repeat;
@@ -81,20 +76,11 @@
   background-size: cover;
 }
 
-.cover:before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  opacity: 60%;
-  background: var(--text-black);
-}
-
 .cover__title {
   position: sticky;
   z-index: 10;
   display: flex;
   flex-direction: column;
-  height: 70%;
   color: var(--text-white);
   font-weight: bold;
   font-size: 5.555em; /*100px*/
@@ -132,6 +118,7 @@
   align-items: center;
   font-size: 1.222em; /*22px*/
   text-transform: uppercase;
+  margin-top: 105px;
 }
 
 .descr__subline {
@@ -173,9 +160,9 @@
 .lots__list {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 25px;
   padding: 30px 0;
   color: var(--text-white);
   list-style: none;
@@ -188,29 +175,20 @@
 .lots__blog {
   position: relative;
   display: flex;
-  flex-flow: column wrap;
-  flex-grow: 1;
-  flex-basis: 100%;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  gap: 35px;
-  height: 596px;
-  padding: 45px 35px;
+  flex-grow: 1; 
+  flex-basis: 100%;
+  gap: 30px;
+  min-height: 596px;
+  padding: 48px 37px;
   text-underline-offset: 3px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.lots__blog:before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  opacity: 60%;
-  background: var(--text-black);
-}
-
-.lots__blog:hover:before {
+.lots__blog.darken:hover:before {
   opacity: 30%;
 }
 
@@ -321,11 +299,11 @@ background-image: url("./../images/card-lot-03.jpg");
   width: 22ch;
 }
 
-.footer .menu ul {
+.footer .menu__list {
   flex-direction: column;
 }
 
-.footer .menu ul .menu__link {
+.footer__menu-link {
   margin: 0 20px 0 0;
   list-style-type: none;
 }
