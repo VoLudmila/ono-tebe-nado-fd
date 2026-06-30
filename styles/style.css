@@ -184,7 +184,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  flex-grow: 1; 
+  flex-grow: 1;
   flex-basis: 100%;
   justify-content: space-between;
   gap: 30px;
@@ -209,7 +209,7 @@
 }
 
 .geometry-bg {
-background-image: url("./../images/card-lot-03.jpg");
+  background-image: url("./../images/card-lot-03.jpg");
 }
 
 .lots__blog-title {
